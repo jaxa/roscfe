@@ -1,0 +1,4 @@
+<launch>
+  <correspond topic="/cfs_hk/ground_command" msg_id="0x189A" cfe_data_type="CFE_SB_CmdHdr_t" ros_data_type="CFE_SB_CmdHdr" sender="0" />
+  <correspond topic="/cfs_hk/hk_telemetry" msg_id="0x089B" cfe_data_type="HK_HkPacket_t" ros_data_type="HK_HkPacket" sender="1" />
+</launch>

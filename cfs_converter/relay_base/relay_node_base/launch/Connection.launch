@@ -1,0 +1,5 @@
+<launch>
+  <ros_relay_node protocol="tcp" port="9876" port_send="9877" ip_addr="127.0.0.1" ring_length="30" />
+  <cfe_relay_app port="9877" port_send="9876" ip_addr="127.0.0.1" ring_length="30" />
+  <include file="./MsgId2Topic.launch" />
+</launch>

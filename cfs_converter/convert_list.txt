@@ -1,0 +1,4 @@
+# comment
+# [ros_pkg path] [launch file name] [name of launch node]
+/home/jaxa/catkin_ws/src/sample_pub bringup.launch sample_pub
+/home/jaxa/catkin_ws/src/sample_sub bringup.launch sample_sub

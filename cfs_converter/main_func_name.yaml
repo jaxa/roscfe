@@ -1,0 +1,4 @@
+# key: value
+# ROS node path: Main function name
+/home/jaxa/catkin_ws/src/sample_pub: pub_main
+/home/jaxa/catkin_ws/src/sample_sub: sub_main
