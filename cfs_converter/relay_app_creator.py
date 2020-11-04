@@ -90,7 +90,7 @@ class RelayAppCreator:
         cnt = 1
         for correspond in self.relay_setting_reader.corresponds:
             if correspond.sender == correspond.SENDER_CFE:
-                continue
+                pass
             topic_no_str = topic_no_str + "int relay_pub_topic_no{:03d};\n".format(cnt)
             cnt = cnt + 1
 

@@ -106,7 +106,7 @@ class RelaySettingReader:
                 correspond.topic = launch.attrib["topic"]
                 correspond.msg_id = launch.attrib["msg_id"]
                 correspond.cfe_data_type = launch.attrib["cfe_data_type"]
-                correspond.ros_data_type = "relay_node::" + launch.attrib["ros_data_type"]
+                correspond.ros_data_type = launch.attrib["ros_data_type"]
                 if launch.attrib["sender"] == "0":
                     correspond.sender = Correspond.SENDER_ROS
                 else:
