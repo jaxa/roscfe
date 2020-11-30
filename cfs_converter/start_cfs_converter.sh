@@ -92,7 +92,7 @@ fi
 # delete work files
 finalize
 
-rm *.pyc
+# rm *.pyc
 # rm *.log
 
 echo "finish cfs converter"

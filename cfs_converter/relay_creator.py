@@ -17,7 +17,7 @@ import traceback
 
 
 class RelayCreator:
-    """Create of relay application."""
+    """Creation of relay application."""
 
     app_creator = None
     node_creator = None
@@ -86,14 +86,14 @@ class RelayCreator:
         self.fop._copyFiles(self.APP_BASE_PATH, self.APP_PATH)
         self.fop._copyFiles(self.NODE_BASE_PATH, self.NODE_PATH)
 
-        # Create of relay node on ROS side
+        # Creation of relay node on ROS side
         self._createRelayNode()
-        self.logger._dumpLog("Create of relay node on ROS side completed")
+        self.logger._dumpLog("Created relay node on ROS side")
 
-        # Create of relay application on CFE side
+        # Creation of relay application on CFE side
         self._createRelayApp()
         self.logger._dumpLog(
-            "Create of relay application on CFE side completed")
+            "Created relay application on CFE side completed")
 
         # Move the created relay application on CFE side and elay node on ROS side to the specified location
         self.fop._replaceDir(self.APP_PATH, self.cfe_dir_path)

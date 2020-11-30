@@ -1,0 +1,38 @@
+@@ -76,6 +76,9 @@
+ #include "hk_platform_cfg.h"
+ #include <string.h>
+ 
++#include <time.h>
++#include <sys/time.h>
++
+ 
+ /************************************************************************
+ ** HK global data
+@@ -373,6 +376,13 @@
+     uint16          CommandCode;
+ 
+     MessageID = CFE_SB_GetMsgId (MessagePtr);
++
++    struct timeval myTime;
++    struct tm *time_st;
++    gettimeofday(&myTime, NULL);
++    time_st = localtime(&myTime.tv_sec);
++    printf("[HK][%02d:%02d.%06d] subscribe 0x%04x\n",
++        time_st->tm_min, time_st->tm_sec, myTime.tv_usec, MessageID);
+     switch (MessageID)
+     {
+ 
+@@ -482,6 +492,13 @@
+     CFE_SB_TimeStampMsg((CFE_SB_Msg_t *) &HK_AppData.HkPacket);
+     CFE_SB_SendMsg((CFE_SB_Msg_t *) &HK_AppData.HkPacket);
+ 
++    struct timeval myTime;
++    struct tm *time_st;
++    gettimeofday(&myTime, NULL);
++    time_st = localtime(&myTime.tv_sec);
++    printf("[HK][%02d:%02d.%06d] publish 0x089B\n",
++        time_st->tm_min, time_st->tm_sec, myTime.tv_usec);
++
+     return;
+ 
+ } /* End of HK_HousekeepingCmd() */

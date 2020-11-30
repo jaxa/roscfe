@@ -7,6 +7,8 @@ This project provides the following 3 components,
 * ROS/cFE interface library
 * ROS/cFE network bridge
 
+**Since there are many combinations of ROS and cFE versions, we do not currently support all versions including the latest version. If you have any requests for updates, please contact us. We will respond on demand.**
+
 ## License
 This project is under the Apache 2.0 license. See LICENSE.txt.
 
