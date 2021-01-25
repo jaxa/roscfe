@@ -61,3 +61,9 @@ Session.vim
 *.a
 *.la
 *.lo
+
+# exception rules
+!tutorial/ros_cfe_relay/type1/cfe/build/
+!tutorial/ros_cfe_relay/type2/cfe/build/
+!tutorial/ros_cfe_relay/type3/cfe/build/
+!tutorial/ros_cfe_relay/type4/cfe/build/
