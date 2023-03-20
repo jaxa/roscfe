@@ -1,6 +1,6 @@
-# RACS (ROS and cFS System) project
+# RACS (ROS1 and cFS System) project
 
-This repository is a collection of libraries and tools which enable to implement Robot Operating System (ROS) nodes into  core Flight Executives (cFE). cFE is a core component of NASA-supplied spacecraft software, Core Flight System (CFS).
+This repository is a collection of libraries and tools which enable to implement Robot Operating System (ROS1) nodes into  core Flight Executives (cFE). cFE is a core component of NASA-supplied spacecraft software, Core Flight System (CFS).
 
 This project provides the following 3 components,
 * CFS converter
